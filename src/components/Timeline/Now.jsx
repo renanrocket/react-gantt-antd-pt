@@ -10,7 +10,7 @@ const NowMarker = ({ visible }) => {
   return (
     <Marker modifier="now" x={time.toX(now)} visible={visible}>
       <div>
-        <div>此时</div>
+        <div>Hoje</div>
       </div>
     </Marker>
   )
