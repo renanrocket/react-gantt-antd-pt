@@ -5,7 +5,7 @@ import { globalContext } from '../../index'
 const Cell = ({ title, start, end, style }) => {
   const { time } = useContext(globalContext)
   return (
-    <div className="rt-timebar__cell" style={{
+    <div className={`rt-timebar__cell ${title}`} style={{
       height: '100%',
       ...time.toStyleLeftAndWidth(start, end),
       ...style
@@ -15,16 +15,16 @@ const Cell = ({ title, start, end, style }) => {
   )
 }
 
-const Row = ({ cells, style }) => {
+const Row = ({ id, title, cells, style }) => {
   const { time } = useContext(globalContext)
   let props = {}
-  if (time.timelineWidth / cells.length < 22) {
+  if (time.timelineWidth / cells.length < 30) {
     props = {
       title: ''
     }
   }
   return (
-    <div className="rt-timebar__row" style={style}>
+    <div className={`rt-timebar__row ${id} ${title}`} style={style}>
       {cells.map(cell => (
         <Cell key={cell.id} {...cell} {...props} />
       ))}

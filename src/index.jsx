@@ -11,7 +11,7 @@ function Gantt({
   projects = [],
   now = new Date(),
   sidebarWidth = 120,
-  minWidth = 400,
+  minWidth = 800,
   scrollToNow = true,
   enableSticky = true,
   clickTask,
@@ -32,6 +32,63 @@ function Gantt({
 
   const gantt = useRef(null)
 
+  const getTextMonth = (month) => {
+
+    let textMonth = "";
+
+    switch (month) {
+      case 1:
+        textMonth = "JAN";
+        break;
+
+      case 2:
+        textMonth = "FEV";
+        break;
+
+      case 3:
+        textMonth = "MAR";
+        break;
+
+      case 4:
+        textMonth = "ABR";
+        break;
+
+      case 5:
+        textMonth = "MAI";
+        break;
+
+      case 6:
+        textMonth = "JUN";
+        break;
+
+      case 7:
+        textMonth = "JUL";
+        break;
+
+      case 8:
+        textMonth = "AGO";
+        break;
+
+      case 9:
+        textMonth = "SET";
+        break;
+
+      case 10:
+        textMonth = "OUT";
+        break;
+
+      case 11:
+        textMonth = "NOV";
+        break;
+
+      case 12:
+        textMonth = "DEZ";
+        break;
+    }
+
+    return textMonth;
+  }
+
   const buildMonthCells = () => {
     const v = []
     function getMonthAdd(y, m) {
@@ -48,7 +105,7 @@ function Gantt({
       const end_date = getMonthAdd(start.getFullYear(), start.getMonth() + i + 1)
       v.push({
         id: `m${i}`,
-        title: `${(start.getMonth() + i) % 12 + 1}月`,
+        title: `${getTextMonth((start.getMonth() + i) % 12 + 1)}`,
         start: start_date,
         end: end_date,
       })
@@ -101,13 +158,13 @@ function Gantt({
     },
     {
       id: 'months',
-      title: '月份',
+      title: 'Projetos',
       cells: buildMonthCells(),
 
     },
     {
       id: 'days',
-      title: '日期',
+      title: 'Dias',
       cells: buildDayCells(),
     }
   ]

@@ -1,5 +1,5 @@
-const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export const getMonth = date => monthNames[date.getMonth()]
 
-export const getDayMonth = date => `${date.getMonth() + 1}mês ${date.getDate()}dia`
+export const getDayMonth = date => `${date.getMonth() + 1}Mês ${date.getDate()}Dia`

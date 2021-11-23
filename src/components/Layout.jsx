@@ -99,7 +99,7 @@ const Layout = ({ enableSticky, scrollToNow, timebar, sidebarWidth, projects }) 
               style={isSticky ? { width: sidebarWidth } : {}}
             >
               {timebar.slice(1, 3).map(({ id, title }) => (
-                <div key={id} className="rt-timebar-key">
+                <div key={id} className={`rt-timebar-key ${id}`}>
                   {title}
                 </div>
               ))}

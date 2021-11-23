@@ -1,7 +1,7 @@
 {
   "name": "react-gantt-antd-rocket-pt",
   "version": "1.0.9",
-  "description": "",
+  "description": "A beautiful react gantt component with antd style.  \r This is a fork of [JSainsburyPLC/react-timelines](https://github.com/JSainsburyPLC/react-timelines)",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib coverage",
@@ -36,7 +36,10 @@
     "tracks",
     "time"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanrocket/react-gantt-antd-pt.git"
+  },
   "author": "icrdr",
   "license": "MIT",
   "dependencies": {
@@ -70,7 +73,7 @@
     "react": "^16.8.6",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.8.6",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.7.1"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -94,5 +97,12 @@
     "setupFiles": [
       "../jestSetup.js"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/renanrocket/react-gantt-antd-pt/issues"
+  },
+  "homepage": "https://github.com/renanrocket/react-gantt-antd-pt#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
