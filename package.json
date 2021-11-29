@@ -1,54 +1,39 @@
 {
-  "name": "react-gantt-antd-rocket-pt",
-  "version": "1.0.9",
-  "description": "A beautiful react gantt component with antd style.  \r This is a fork of [JSainsburyPLC/react-timelines](https://github.com/JSainsburyPLC/react-timelines)",
-  "main": "lib/index.js",
-  "scripts": {
-    "clean": "rimraf lib coverage",
-    "build:js": "babel src/ -d lib/",
-    "watch:js": "babel -w src/ -d lib/",
-    "build:css": "node-sass src/scss/style.scss lib/css/style.css",
-    "watch:css": "node-sass -w src/scss/style.scss lib/css/style.css",
-    "watch": "npm run watch:js & npm run watch:css",
-    "build": "npm run clean && npm run build:js && npm run build:css",
-    "test": "npm run lint && npm run unit",
-    "lint": "npm run lint:prettier && npm run lint:js",
-    "lint:js": "eslint . --ext .js,.jsx",
-    "lint:js:fix": "eslint . --ext .js,.jsx --fix",
-    "lint:prettier": "prettier --list-different \"{e2e,src}/**/*.{js,jsx}\"",
-    "lint:prettier:fix": "prettier --write \"{e2e,src}/**/*.{js,jsx}\"",
-    "unit": "jest",
-    "coverage": "jest --coverage --collectCoverageFrom='**/*.{js,jsx}'",
-    "prepublish": "npm run clean && npm run build",
-    "demo:deploy": "./demo/ops/deploy.sh"
-  },
-  "keywords": [
-    "timeline",
-    "schedule",
-    "history",
-    "react",
-    "gantt",
-    "horizontal",
-    "library",
-    "scroll",
-    "scss",
-    "sass",
-    "tracks",
-    "time"
+  "_args": [
+    [
+      "react-gantt-antd-pt@1.0.24",
+      "D:\\www\\aiamis\\ecossistem_v5"
+    ]
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/renanrocket/react-gantt-antd-pt.git"
+  "_from": "react-gantt-antd-pt@1.0.24",
+  "_id": "react-gantt-antd-pt@1.0.24",
+  "_inBundle": false,
+  "_integrity": "sha512-RUcR1oSiWnOkxFBH+KtJACj+c7LAZ6bLgbJyDMJ7few2yRasz/nqDsgrJu+yzNA0HElkZOQkEHvAw0I085pifw==",
+  "_location": "/react-gantt-antd-pt",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-gantt-antd-pt@1.0.24",
+    "name": "react-gantt-antd-pt",
+    "escapedName": "react-gantt-antd-pt",
+    "rawSpec": "1.0.24",
+    "saveSpec": null,
+    "fetchSpec": "1.0.24"
   },
-  "author": "icrdr",
-  "license": "MIT",
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-gantt-antd-pt/-/react-gantt-antd-pt-1.0.24.tgz",
+  "_spec": "1.0.24",
+  "_where": "D:\\www\\aiamis\\ecossistem_v5",
+  "author": {
+    "name": "icrdr"
+  },
   "dependencies": {
     "prop-types": "^15.7.2"
   },
-  "files": [
-    "src",
-    "lib"
-  ],
+  "description": "A beautiful react gantt component with antd style.   This is a fork of [JSainsburyPLC/react-timelines](https://github.com/JSainsburyPLC/react-timelines)",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
@@ -73,12 +58,12 @@
     "react": "^16.8.6",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^16.8.6",
-    "rimraf": "^2.7.1"
+    "rimraf": "^2.6.3"
   },
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
+  "files": [
+    "src",
+    "lib"
+  ],
   "jest": {
     "rootDir": "./src",
     "resetMocks": true,
@@ -98,11 +83,46 @@
       "../jestSetup.js"
     ]
   },
-  "bugs": {
-    "url": "https://github.com/renanrocket/react-gantt-antd-pt/issues"
+  "keywords": [
+    "timeline",
+    "schedule",
+    "history",
+    "react",
+    "gantt",
+    "horizontal",
+    "library",
+    "scroll",
+    "scss",
+    "sass",
+    "tracks",
+    "time"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "react-gantt-antd-pt",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
   },
-  "homepage": "https://github.com/renanrocket/react-gantt-antd-pt#readme",
-  "directories": {
-    "lib": "lib"
-  }
+  "repository": "",
+  "scripts": {
+    "build": "npm run clean && npm run build:js && npm run build:css",
+    "build:css": "node-sass src/scss/style.scss lib/css/style.css",
+    "build:js": "babel src/ -d lib/",
+    "clean": "rimraf lib coverage",
+    "coverage": "jest --coverage --collectCoverageFrom='**/*.{js,jsx}'",
+    "demo:deploy": "./demo/ops/deploy.sh",
+    "lint": "npm run lint:prettier && npm run lint:js",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "eslint . --ext .js,.jsx --fix",
+    "lint:prettier": "prettier --list-different \"{e2e,src}/**/*.{js,jsx}\"",
+    "lint:prettier:fix": "prettier --write \"{e2e,src}/**/*.{js,jsx}\"",
+    "prepublish": "npm run clean && npm run build",
+    "test": "npm run lint && npm run unit",
+    "unit": "jest",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:css": "node-sass -w src/scss/style.scss lib/css/style.css",
+    "watch:js": "babel -w src/ -d lib/"
+  },
+  "version": "1.0.24"
 }
