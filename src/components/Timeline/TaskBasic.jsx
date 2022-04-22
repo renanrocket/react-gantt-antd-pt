@@ -24,10 +24,10 @@ const Basic = ({ title, start, end, classes, dataSet, tooltip }) => (
           <div>
             <div>{title}</div>
             <div>
-              <span>Começa</span> {getDayMonth(start)}
+              <span>Starts</span> {getDayMonth(start)}
             </div>
             <div>
-              <span>Termina</span> {getDayMonth(end)}
+              <span>Ends</span> {getDayMonth(end)}
             </div>
           </div>
         )}
