@@ -42,7 +42,7 @@ function Gantt({
         break;
 
       case 2:
-        textMonth = "FEV";
+        textMonth = "FEB";
         break;
 
       case 3:
@@ -50,11 +50,11 @@ function Gantt({
         break;
 
       case 4:
-        textMonth = "ABR";
+        textMonth = "APR";
         break;
 
       case 5:
-        textMonth = "MAI";
+        textMonth = "MAY";
         break;
 
       case 6:
@@ -70,11 +70,11 @@ function Gantt({
         break;
 
       case 9:
-        textMonth = "SET";
+        textMonth = "SEP";
         break;
 
       case 10:
-        textMonth = "OUT";
+        textMonth = "OCT";
         break;
 
       case 11:
@@ -82,7 +82,7 @@ function Gantt({
         break;
 
       case 12:
-        textMonth = "DEZ";
+        textMonth = "DEC";
         break;
     }
 
@@ -158,13 +158,13 @@ function Gantt({
     },
     {
       id: 'months',
-      title: 'Etapas',
+      title: 'MOTHS',
       cells: buildMonthCells(),
 
     },
     {
       id: 'days',
-      title: 'Dias',
+      title: 'DAYS',
       cells: buildDayCells(),
     }
   ]
